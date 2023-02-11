@@ -7,9 +7,9 @@ function solveEquation(a, b, c) {
   }
   return arr;
 }
-function solveEquation(a, b, c) {
-  let arr;
-  "use strict"
+  function solveEquation(a, b, c) {
+    let arr;
+    "use strict"
   const d = -b / (2 * a);
   if(d = 0) {
     arr = [-1];
