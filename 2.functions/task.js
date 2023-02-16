@@ -18,82 +18,25 @@ function getArrayParams(...arr) {
 }
 
 function summElementsWorker(...arr) {
-  let min, max, sum, avg;
-  sum = 0;
-    for (let i = 0; i < arr.length; i++) {
-      if(arr[i] > max) {
-        max = arr[i];
-      }
-      if(arr[i] < min) {
-        min = arr[i];
-      }
-      sum += arr[i];
-    }
-    avg = Number(min + max);
-
-  return { sum };
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += args[i];
+  }
+  return sum;
 }
 
 function differenceMaxMinWorker(...arr) {
-  let min, max, sum, avg;
-  min = Infinity; 
-  max = -Infinity;
-  sum = 0;
-    for (let i = 0; i < arr.length; i++) {
-      if(arr[i] > max) {
-        max = arr[i];
-      }
-      if(arr[i] < min) {
-        min = arr[i];
-      }
-      sum += arr[i];
-      max = sum;
-    }
-    avg = Number(max - min);
 
-  return { sum };
 }
 
-
 function differenceEvenOddWorker(...arr) {
-  let min, max, sum, avg;
-  min = Infinity; 
-  max = -Infinity;
-  sum = 0;
-    for (let i = 0; i < arr.length; i++) {
-      if(arr[i] > max) {
-        max = arr[i];
-      }
-      if(arr[i] < min) {
-        min = arr[i];
-      }
-      sum += arr[i];
-      max = sum;
-      }
-    avg = Number(max - min);
 
-  return { sum };
 }
 
 function averageEvenElementsWorker(...arr) {
-  let min, max, sum, avg;
-  min = Infinity; 
-  max = -Infinity;
-  sum = 0;
-    for (let i = 0; i < arr.length; i++) {
-      if(arr[i] > max) {
-        max = arr[i];
-      }
-      if(arr[i] < min) {
-        min = arr[i];
-      }
-      sum += arr[i];
-      max = sum;
-    }
-    avg = Number((sum / arr.length).toFixed(2));
 
-  return { sum };
 }
+
 
 function worker(arr) {
   let min, max, difference;
@@ -124,4 +67,19 @@ function makeWork (...arrOfArr) {
       sum = max;
     return max;
   }
+}
+function worker2(arr) {
+  let min, max, difference;
+  
+  min = Infinity;
+  max = -Infinity;
+  for (let i = 0; i < arr.length; i += 1) {
+  if(arr[i] < min)
+  min = arr[i];
+  
+  if(arr[i] > max)
+  max = arr[i];
+  difference = Math.abs(min - max);
+  }
+  return makeWork();
 }
