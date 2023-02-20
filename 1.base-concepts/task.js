@@ -5,13 +5,11 @@ function solveEquation(a, b, c) {
   if(d < 0) {
     arr = [];
   }
-  let d = -b / (2 * a);
-  if(d = 0) {
-    arr = [-1];
+  else if(d = 0) {
+    arr = [-b/(2*a)];
   }
-  let d = (-b + Math.sqrt(d) )/(2*a) && (-b - Math.sqrt(d) )/(2*a);
-  if(d > 0) {
-    arr = [-1, -4];
+  else if(d > 0) {
+    arr = [(-b + Math.sqrt(d) )/(2*a) && (-b - Math.sqrt(d) )/(2*a)];
   }
   return arr;
 }
