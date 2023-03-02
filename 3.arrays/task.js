@@ -1,12 +1,11 @@
 function compareArrays(arr1, arr2) {
-  let result = (arr1, arr2) => (arr1.length === arr2.length) && 
-  (arr1.every(element, index)); 
+  return (arr1, arr2) => (arr1.length === arr2.length) && 
+  (arr1.every((element, index) => element === arr2[index]));
   (element === arr2[index]);
-  return result;
 }
 
 function getUsersNamesInAgeRange(users, gender) {
-    let result = arr.filter(...).map(...).reduce((acc, item, index, arr)=> {
+    let result = arr.filter(...gender).map(...age).reduce((acc, item, index, users)=> {
         acc+=item;
         if(index === arr.length - 1){
             return acc / arr.length;
