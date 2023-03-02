@@ -1,5 +1,4 @@
 function Student(name, gender, age) {
-    let student = new Student;
     this.name = name;
     this.gender = gender;
     this.age = age;
@@ -11,9 +10,8 @@ Student.prototype.setSubject = function (subjectName) {
 
 Student.prototype.addMarks = function (...marks) {
     if ( this.marks === undefined) {
-        this.marks = [mark];
         } else {
-        this.marks.push(mark);
+        this.marks.push(marks);
         }
 }
 
@@ -26,5 +24,5 @@ Student.prototype.getAverage = function () {
 Student.prototype.exclude = function (reason) {
     delete this.subject;
     delete this.marks;
-    this.reason = reason;
+    this.reason = excluded;
     }
