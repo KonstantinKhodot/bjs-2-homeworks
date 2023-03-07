@@ -3,28 +3,28 @@ class PrintEditionItem {
 		this.name = name;
 		this.releaseDate = releaseDate;
         this.pagesCount = pagesCount;
-        this.state = 100;
+        this._state = 100;
         this.type = null;
 }
 
 fix() {
-    this.state *= 1.5;
+    this._state *= 1.5;
 }
 
 set state(num) {
-    if (num < 0) {
-        this.state = 0;
+    if (num > 0) {
+        this._state = 0;
     }
-    if (num > 100) {
-        this.state = 100;
+    if (num < 100) {
+        this._state = 100;
     }
     else {
-        this.state = num;
+        this._state = num;
     }
 }
 
 get state() {
-    return this.state;
+    return this._state;
 }
 }
 
@@ -75,20 +75,19 @@ class Library {
             return this.books.push(book);
         }
     }
-    findBookBy(type, value) {
-        if (type findBookBy === book) {
-            return this.books.push(book);
+    //findBookBy(type, value) {
+        //if (typeof findBookBy === book) {
+            //return this.books.push(book);
         }
-        else {
-            return null;
+       // else {
+            //return null;
         }
-    giveBookByName(bookName) {
-        if (type giveBookByName === book) {
-            return this.books.push(book);
+    //giveBookByName(bookName) {
+        //if (typeof giveBookByName === book) {
+            //return this.books.push(book);
         }
-        else {
-            return null;
+        //else {
+            //return null;
         }
     }
-}
-}
+
