@@ -37,4 +37,5 @@ function getUsersNamesInAgeRange(users, gender) {
         }
         return result;
     }
+  }
 }
