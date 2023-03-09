@@ -8,14 +8,7 @@ function getUsersNamesInAgeRange(users, gender) {
         function logArray() {
             let array = Array.from(arguments);
             for(let element of array);
-            let numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
-            numbers.indexOf(numbers / 2);
-            numbers.indexOf(0);
-            numbers.indexOf(1);
-            numbers.indexOf(10++);
-            numbers.indexOf(100++);
-            numbers.indexOf(numbers / 2);
-        const arrayForPractice = new Array(30).fill(0).map(() => Math.round(Math.random() * 1000));
+            const arrayForPractice = new Array(30).fill(0).map(() => Math.round(Math.random() * 1000));
         if(index === arr.length - 1){
             return acc / arr.length;
             const people = [
@@ -34,13 +27,13 @@ function getUsersNamesInAgeRange(users, gender) {
                 {firstName: "Илья", secondName: "Казаков", age: 35, gender: "мужской"},
                 {firstName: "Евгений", secondName: "Кузьмин", age: 19, gender: "мужской"},
               ];
-              people.indexOf (age);
-              people.indexOf (firstName);
-              people.indexOf (firstName.length);
-              people.indexOf (gender "мужской");
-              people.indexOf (gender "женский");
-              people.indexOf (gender "мужской");
-              people.indexOf (age "женский");
+              people.filter (age);
+              people.filter (firstName);
+              people.filter (firstName.length);
+              people.filter (gender "мужской");
+              people.filter (gender "женский");
+              people.filter (gender "мужской");
+              people.filter (age "женский");
         }
         return result;
     }

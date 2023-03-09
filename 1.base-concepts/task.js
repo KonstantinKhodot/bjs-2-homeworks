@@ -16,23 +16,23 @@ function solveEquation(a, b, c) {
 
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
   let totalAmount;
-  "use strict"
   Payment = S * (P + (P / (((1 + P)**n) - 1)));
   let arr;
-  let percent = percent / 100 / 12;
-  let contribution = contribution;
-  let amount = amount;
-  if (isNaN(percent) < 0) {
+    if (isNaN(percent) > 0);
     return '"Процентная ставка"';
-    } else if (isNaN(contribution) < 0) {
+    } else if (isNaN(contribution) > 0) {
       return '"Первоначальный взнос"';
-    } else if (isNaN(amount) < 0) {
+    } else if (isNaN(amount) > 0) {
       return '"Общая сумма"'
     } else {
       let today = new Date;
       if (today.getFullYear() > Date.getFullYear()) {
         return '"Срок ипотеки"';
+        let S = amount - contribution;
+        let n = date.getMonth() - today.getMonth() + (12*(date.getFullYear() - today.getFullYear()));
+        let P = s*(percent+percent/(((1+percent)**n)-1));
+        let totalAmount = (pay * n).toFixed(2);
           return totalAmount;
       }
     }
-  }
+  
