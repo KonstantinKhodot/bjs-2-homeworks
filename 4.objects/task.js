@@ -1,4 +1,4 @@
-function Student(marks, gender, age) {
+function Student(marks, name, gender, age) {
     this.name = name;
     this.gender = gender;
     this.age = age;
@@ -10,14 +10,14 @@ Student.prototype.setSubject = function (subjectName) {
 }
 
 Student.prototype.addMarks = function (...marks) {
-    this.marks.forEach(item => sum += item);
-    this.marks.push(...marks);
+    student.hasOwnProperty();
+    this.marks.push(marks);
 }
 
 Student.prototype.getAverage = function () {
     let sum = 0;
     this.marks.forEach(item => sum += item);
-    return 0;  
+    return sum / this.marks.length;  
 }
 
 Student.prototype.exclude = function (excluded) {
