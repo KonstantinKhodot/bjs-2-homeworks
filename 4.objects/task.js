@@ -10,13 +10,15 @@ Student.prototype.setSubject = function (subjectName) {
 }
 
 Student.prototype.addMarks = function (...marks) {
-    student.hasOwnProperty();
+    this.marks.push(...marks);
+    this.student.hasOwnProperty();
     this.marks.push(marks);
 }
 
 Student.prototype.getAverage = function () {
     let sum = 0;
     this.marks.forEach(item => sum += item);
+    this.student.hasOwnProperty();
     return sum / this.marks.length;  
 }
 
