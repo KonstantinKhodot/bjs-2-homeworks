@@ -10,6 +10,12 @@ function getUsersNamesInAgeRange(users, gender) {
     const newPeople = people.map(averageAge => '${averageAge}'{
       return averageAge;
     })
+    const newPeople = people
+      .filter(person => male)
+      .map(person => averageAge)
+        return averageAge;
+      }
+
     const people = [
       {firstName: "Александр", secondName: "Карпов", age: 17, gender: "мужской"},
       {firstName: "Егор", secondName: "Морозов", age: 21, gender: "мужской"},
@@ -26,16 +32,8 @@ function getUsersNamesInAgeRange(users, gender) {
       {firstName: "Илья", secondName: "Казаков", age: 35, gender: "мужской"},
       {firstName: "Евгений", secondName: "Кузьмин", age: 19, gender: "мужской"},
     ];
-    people.filter (age);
-    people.filter (firstName);
-    people.filter (firstName.length);
-    people.filter (gender "мужской");
-    people.filter (gender "женский");
-    people.filter (gender "мужской");
-    people.filter (age "женский");
-}
-  }
-  function logArray() {
+    
+    function logArray() {
     const arrayForPractice = new Array(30).fill(0).map(() => Math.round(Math.random() * 1000));
 if(index === arr.length - 1){
     return acc / arr.length;
