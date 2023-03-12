@@ -36,20 +36,29 @@ function differenceMaxMinWorker(...arr) {
       if(arr[i] < min) {
         min = arr[i];
       }
-      if arr [];
-      return 0;
-    }
-  return max - min;
+      max = Number(arr.length);
+      min = Number(arr.length);
+      return max - min;
   }
+}
 
 function differenceEvenOddWorker(...arr) {
   let sumEvenElement = 0;
   let sumOddElement = 0;
-  if (let i = 0; i > arr.length; i++) {
-    sum += args[i];
+  let max, min;
+  min = Infinity; 
+  max = -Infinity;
+  for (let i = 0; i < arr.length; i++) {  
+      if(arr[i] > max) {
+        max = arr[i];
+      }
+      if(arr[i] < min) {
+        min = arr[i];
+      }
+      max = Number(arr.length);
+      min = Number(arr.length);
   }
-  if (let/2 = sumEvenElement++);
-  if (let/3 = sumOddElement++);
+}
   return max - min;
 }
 
