@@ -15,24 +15,14 @@ function solveEquation(a, b, c) {
 }
 
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
-  let totalAmount;
+  let totalAmount = 0;
   Payment = S * (P + (P / (((1 + P)**n) - 1)));
   let arr;
-    if (isNaN(percent) > 0);
-    return '"Процентная ставка"';
-    } else if (isNaN(contribution) > 0) {
-      return '"Первоначальный взнос"';
-    } else if (isNaN(amount) > 0) {
-      return '"Общая сумма"'
-    } else {
-      let today = new Date;
-      if (today.getFullYear() > Date.getFullYear()) {
-        return '"Срок ипотеки"';
-        let S = amount - contribution;
-        let n = date.getMonth() - today.getMonth() + (12*(date.getFullYear() - today.getFullYear()));
-        let P = s*(percent+percent/(((1+percent)**n)-1));
-        let totalAmount = (pay * n).toFixed(2);
-          return totalAmount;
+    let S = amount - contribution;
+    let n = date.getMonth() - today.getMonth() + (12*(date.getFullYear() - today.getFullYear()));
+    let P = percent/12/100;
+    let totalAmount = (pay * n).toFixed(2);
+    return totalAmount;
       }
     }
-  
+  }
