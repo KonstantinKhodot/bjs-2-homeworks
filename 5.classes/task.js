@@ -64,11 +64,12 @@ class DetectiveBook extends Book {
     }
 }
 
-
 class Library {
     constructor(name) {
 		this.name = name;
-		this.books = [];
+		this.books[i][type] === value;
+        if (book.state | type) {
+            return this.books.push(book);
     }
     addBook(book) {
         if (book.state > 30) {
@@ -83,8 +84,8 @@ class Library {
             return null;
         }
     giveBookByName(bookName) {
-        if (typeof giveBookByName === book) {
-            return this.books.push(book);
+        this.name = name;
+		this.books[i].name === bookName;
         }
         else {
             return null;
