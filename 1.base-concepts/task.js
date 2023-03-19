@@ -13,3 +13,13 @@ function solveEquation(a, b, c) {
   }
   return arr;
 }
+
+function calculateTotalMortgage(percent, contribution, amount, countMonths) {
+    Payment = S * (P + (P / (((1 + P)**n) - 1)));
+    let arr;
+    let S = amount - contribution;
+    let n = date.getMonth() - today.getMonth() + (12*(date.getFullYear() - today.getFullYear()));
+    let P = percent/12/100;
+    let totalAmount = (pay * n).toFixed(2);
+    return totalAmount;
+      }
