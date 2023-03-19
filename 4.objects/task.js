@@ -10,17 +10,17 @@ Student.prototype.setSubject = function (subjectName) {
 }
 
 Student.prototype.addMarks = function (...marks) {
-    if(this.marks === undefined){ 
+    if(this.marks === 0){ 
     this.marks.push(...marks);
-    } else {
-    const.student.hasOwnProperty("addMarks");
-}
+  }
 }
 
 Student.prototype.getAverage = function () {
     let sum = 0;
     this.marks.forEach(item => sum += item);
-    const.student.hasOwnProperty("getAverage");
+    if(this.marks === undefined){
+        else this.marks = 0;
+        return 0;}
     return sum / this.marks.length;  
 }
 
