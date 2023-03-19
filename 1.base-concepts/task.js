@@ -16,10 +16,20 @@ function solveEquation(a, b, c) {
 
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
   Payment = S * (P + (P / (((1 + P)**n) - 1)));
-  let arr;
-    let S = amount - contribution;
-    let n = date.getMonth() - today.getMonth() + (12*(date.getFullYear() - today.getFullYear()));
-    let P = percent/12/100;
-    let totalAmount = (pay * n).toFixed(2);
+  if (isNaN(percent)) {
+    return false;
+  }
+  if (isNaN(contribution)) {
+    return false;
+  }
+  if (isNaN(amount)) {
+    return false;
+  }
+    let arr;
+        let totalAmount = (pay * countMonths).toFixed(2);
+        let creditBody = amount - contribution;
+        let countMonths = date.getMonth() - today.getMonth() + (12*(date.getFullYear() - today.getFullYear()));
+        let percentDoubleMonth = percent/100/12;
+        let payment = creditBody * (percentDoubleMonth + percentDoubleMonth / (((1 + percentDoubleMonth) ** countMonths) - 1));
     return totalAmount;
   }
