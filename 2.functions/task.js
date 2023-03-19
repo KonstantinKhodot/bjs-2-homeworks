@@ -36,8 +36,9 @@ function differenceMaxMinWorker(...arr) {
       if(arr[i] < min) {
         min = arr[i];
       }
-      return max - min;
       }
+      return max - min;
+    }
 
 function differenceEvenOddWorker(...arr) {
   let sumEvenElement = 0;
@@ -46,13 +47,10 @@ function differenceEvenOddWorker(...arr) {
       if(arr[i] % 2 == 0) {
         sumEvenElement += arr[i];
       }
-      if(arr[i] % 1 == 0) {
+      else (arr[i] % 3 == 0) {
         sumOddElement += arr[i];
       }
-      max = Number(arr.length);
-      min = Number(arr.length);
   }
-}
   return sumEvenElement + sumOddElement;
 }
 
