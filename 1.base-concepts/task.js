@@ -26,10 +26,10 @@ function calculateTotalMortgage(percent, contribution, amount, countMonths) {
     return false;
   }
     let arr;
-        let totalAmount = (pay * countMonths).toFixed(2);
         let creditBody = amount - contribution;
-        let countMonths = date.getMonth() - today.getMonth() + (12*(date.getFullYear() - today.getFullYear()));
+        //let countMonths = date.getMonth() - today.getMonth() + (12*(date.getFullYear() - today.getFullYear()));
         let percentDoubleMonth = percent/100/12;
         let payment = creditBody * (percentDoubleMonth + percentDoubleMonth / (((1 + percentDoubleMonth) ** countMonths) - 1));
-    return totalAmount;
+        let totalAmount = (Payment * countMonths).toFixed(2);
+        return totalAmount;
   }
