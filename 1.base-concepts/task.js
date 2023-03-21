@@ -15,7 +15,6 @@ function solveEquation(a, b, c) {
 }
 
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
-  //Payment = S * (P + (P / (((1 + P)**n) - 1)));
   if (isNaN(percent)) {
     return false;
   }
@@ -29,7 +28,7 @@ function calculateTotalMortgage(percent, contribution, amount, countMonths) {
         let creditBody = amount - contribution;
         //let countMonths = date.getMonth() - today.getMonth() + (12*(date.getFullYear() - today.getFullYear()));
         let percentDoubleMonth = percent/100/12;
-        let Payment = creditBody * (percentDoubleMonth + percentDoubleMonth / (((1 + percentDoubleMonth) ** countMonths) - 1));
+        let payment = creditBody * (percentDoubleMonth + percentDoubleMonth / (((1 + percentDoubleMonth) ** countMonths) - 1));
         let totalAmount = (payment * countMonths).toFixed(2);
-        return totalAmount;
+        return + totalAmount;
   }
