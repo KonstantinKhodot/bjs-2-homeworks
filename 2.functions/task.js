@@ -47,12 +47,11 @@ function differenceEvenOddWorker(...arr) {
       if(arr[i] % 2 == 0) {
         sumEvenElement += arr[i];
       }
-      else (arr[i] % 3 == 0) {
+      else (arr[i] % 3 == 0)
         sumOddElement += arr[i];
       }
+      return sumEvenElement - sumOddElement;
   }
-  return sumEvenElement + sumOddElement;
-}
 
 function averageEvenElementsWorker(...arr) {
   let sumEvenElement = 0;
