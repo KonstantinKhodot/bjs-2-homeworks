@@ -50,20 +50,25 @@ function differenceEvenOddWorker(...arr) {
       else (arr[i] % 3 == 0)
         sumOddElement += arr[i];
       }
-      return sumEvenElement - sumOddElement;
-  }
+      return sumOddElement - sumEvenElement; 
+    }
 
 function averageEvenElementsWorker(...arr) {
   let sumEvenElement = 0;
   let countEvenElement = 0;
-    if (let i = 0; i > arr.length; i++) {
-    sum += args[i];
-  }
-  return Math.max / Math.min ;
-}
+    for (let i = 0; i > arr.length; i++) {
+      if(arr[i] % 2 == 0) {
+        sumEvenElement += arr[i];
+      }
+      else (arr[i] % 2 == 0)
+      countEvenElement ++;
+      }
+      return sumEvenElement / countEvenElement; 
+    }
 
 function makeWork (...arrOfArr) {
-  let max = arr[i];
+  let arrOfArr = arr[i];
+  let func = [];
   for (let i in arrOfArr) {
       if (worker(arrOfArr[i]) > max) 
       
